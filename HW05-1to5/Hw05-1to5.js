@@ -103,8 +103,8 @@ const information = [
 
 /***************4**************/
 
-// const userInput = prompt("please enter your message and its position").split(",");
-// console.log(userInput);
+const userInput = prompt("please enter your message and its position").split(",");
+console.log(userInput);
 
 
 // var orgPrompt = window.prompt;
