@@ -8,10 +8,6 @@
 body {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 
@@ -19,38 +15,33 @@ body {
     width: 100%;
     height: 100%;
     background: url('city1.jpg') no-repeat center center fixed;
+
+
     background-size: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; */
 }
 
-/* Chrome, Safari, Opera */
-/* @-webkit-keyframes myfirst {
-    from {
-        opacity: 8;
-    }
-
-    to {
-        opacity: 20;
-    }
-} */
 
 
 .box {
     background: rgb(163, 59, 232);
     background: linear-gradient(0deg, rgba(163, 59, 232, 1) 0%, rgba(118, 120, 245, 1) 100%);
+
+    width: 500px;
+    border-radius: 10px;
+}
+
+
+.header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 500px;
-    border-radius: 10px;
 }
 
 
@@ -62,20 +53,94 @@ body {
 }
 
 #head {
-    margin: 20px;
+    margin-top: 20px;
     margin-bottom: 50px;
+    color: white;
+}
+
+
+.inputBoxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .input {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 90%;
-    height: 130px;
-    margin: 10px 30px;
+    width: 75%;
+    border-bottom: 2px solid rgb(183, 182, 182);
+    margin: 10px;
+
+}
+
+#inputUser {
+    width: 100%;
+    height: 40px;
+    background: none;
+    border: none;
     outline: 0;
+    color: white;
+}
+
+#inputPass {
+    width: 100%;
+    height: 40px;
+    background: none;
+    outline: 0;
+    border: none;
+    color: white;
+}
+
+.person {
+    margin: 0px 10px;
+    color: white;
+}
+
+
+.lock {
+    margin: 0px 10px;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+
 }
 
 .remember {
-    text-align: left;
+    margin: 20px;
+    padding-left: 50px;
+    color: white;
+}
+
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button {
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+
+a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+    margin: 20px;
+    margin-top: 60px;
+    text-decoration: none;
+    font-size: 14px;
 }
