@@ -8,9 +8,17 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: gainsboro;
+    /* position: absolute; */
 }
 
 .box {
-    background-color: rgb(91, 154, 91);
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgb(74, 188, 74);
     color: white;
+    padding: 20px;
+    border-radius: 10px;
 }

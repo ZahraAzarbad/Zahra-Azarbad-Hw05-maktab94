@@ -102,24 +102,48 @@ const information = [
 
 
 /***************4**************/
+const box = document.querySelector(".box");
+const text = document.getElementById("text");
+// const notification = document.querySelectorAll(".notifiction");
 
-const userInput = prompt("please enter your message and its position").split(",");
-console.log(userInput);
+function userInput() {
+    const userMessage = prompt("please enter a message");
+    const top = Number(prompt("please enter top position"));
+    const right = Number(prompt("please enter right position"));
+    const userClass = prompt("please enter a class name");
+
+    const getUser = {
+        message: userMessage,
+        className: userClass,
+        top: top,
+        right: right,
+    }
+
+    return getUser
+}
+
+// userInput();
 
 
-// var orgPrompt = window.prompt;
-// var varone, vartwo;
-// function saveVars(doc) {
-//     varone = doc.getElementById("x").value;
-//     vartwo = doc.getElementById("y").value
-//     return [varone, vartwo];
-// }
-// window.prompt = function (one, two) {
-//     var html = '<center><br><br>' + one + ':<input type=text id=x><br>' + two + ':<input type=text id=y><br><input type=button value=OK onclick=\'window.returnValue=window.dialogArguments.saveVars(document);window.close()\'/>';
-//     var res = showModalDialog('javascript:"' + html + '"', window, "dialogWidth:100px;dialogHeight:100px");
-// }
-// x = prompt('first name', 'last name')
-// alert(x)
+function showNotification({ top, right, className, message }) {
+
+
+    box.style.top = top + "px";
+    box.style.right = right + "px";
+    text.textContent = message;
+
+
+
+    box.classList.add(className);
+
+
+}
+
+
+showNotification(userInput());
+
+
+
 
 
 
